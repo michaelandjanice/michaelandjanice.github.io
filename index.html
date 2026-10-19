@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Save the Date · Michael &amp; Janice</title>
+<meta name="description" content="Michael & Janice are getting married. Friday, October 8, 2027, The Presidio, San Francisco. Save the date.">
+<meta property="og:title" content="Save the Date · Michael & Janice">
+<meta property="og:description" content="Friday, October 8, 2027 · The Presidio, San Francisco">
+<meta property="og:image" content="https://mjslee0921.github.io/save-the-date/photos/hero.jpg">
+<meta property="og:url" content="https://mjslee0921.github.io/save-the-date/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+
+<nav class="nav">
+  <span class="brand">M <em>&amp;</em> J</span>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="en">EN</button><button type="button" data-lang="ko">한국어</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-media"><img src="photos/hero.jpg" alt=""></div>
+  <div class="hero-text">
+    <p class="eyebrow" data-t="eyebrow"></p>
+    <h1 id="names"></h1>
+    <p class="date" data-t="date"></p>
+    <p class="place" data-t="place"></p>
+  </div>
+  <a class="cue" href="#details" aria-label="Scroll"><i></i></a>
+</header>
+
+<main>
+  <section id="details" class="details">
+    <div class="wrap">
+      <div class="rule"></div>
+      <div class="count"><b id="days">—</b><span data-t="countdown"></span></div>
+      <div class="cards">
+        <div class="card">
+          <p class="label" data-t="when_label"></p>
+          <p class="big" data-t="when"></p>
+        </div>
+        <div class="card">
+          <p class="label" data-t="where_label"></p>
+          <p class="big" data-t="where"></p>
+          <p class="sub" data-t="where_sub"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="closing">
+    <div class="wrap">
+      <p class="script" data-t="closing"></p>
+      <p class="small" data-t="soon"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p id="footer-names"></p>
+</footer>
+
+<script src="script.js?v=6"></script>
+</body>
+</html>
