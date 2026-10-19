@@ -71,7 +71,7 @@ def render(lang: str, size_name: str) -> Path:
     cx = w / 2
     s = w / 1080  # scale factor if sizes change
 
-    f_eyebrow = font(t["serif"] if lang == "ko" else "CormorantGaramond-Light.ttf", round((30 if lang == "ko" else 28) * s))
+    f_eyebrow = font(t["serif"] if lang == "ko" else "CormorantGaramond-Light.ttf", round((40 if lang == "ko" else 38) * s))
     f_names = font(t["serif"], round((104 if lang == "ko" else 122) * s))
     f_amp = font("CormorantGaramond-LightItalic.ttf", round((84 if lang == "ko" else 66) * s))
     f_date = font(t["serif"], round((44 if lang == "ko" else 48) * s))
@@ -79,8 +79,8 @@ def render(lang: str, size_name: str) -> Path:
 
     # Vertical layout: the block sits a little above centre so it clears the couple low in the frame.
     y = h * (0.30 if size_name == "4x5" else 0.26)
-    tracked(draw, cx, y, t["eyebrow"], f_eyebrow, tracking=(9 if t["tracking"] else 4) * s, fill=(255, 255, 255, 230))
-    y += f_eyebrow.size * 1.9
+    tracked(draw, cx, y, t["eyebrow"], f_eyebrow, tracking=(12 if t["tracking"] else 6) * s, fill=(255, 255, 255, 230))
+    y += f_eyebrow.size * 1.7
 
     n1, n2 = t["names"]
     gap = 26 * s
